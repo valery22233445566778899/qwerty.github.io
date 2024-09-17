@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Itim&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif; 
+    background-color: #CADAEB;
+
+}
+
+.contakti {
+    background-color: #EDF6FF;
+    color: #606D7C;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: 1700px;
+}
+.contakti:hover {
+    background-color: #A2D1FF;
+}
+.contakti:active {
+    background-color: #8EB4DC;
+}
+
+.kartinka{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    margin-left: 80px;
+}
+
+.rezultat{
+    font-size: 30px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 500px;
+    color: #606D7C;
+}
+
+.reklama{
+    font-size: 20px;
+    width: 600px;
+    height: 20px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #606D7C;
+    margin-top: 82px;
+    margin-left: 650px;
+}
+
+.verx{
+    height: 40px;
+    background-color: #6F8093;
+}
+
+.logo-img{
+    position: absolute;
+    width: 29px;
+    height: 24.27px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+a{
+    color: #606D7C;
+}
+
+.btn-homak{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button-buy {
+    background-color: #EDF6FF;
+    color: #606D7C;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 80px;
+}
+.button-buy:hover {
+    background-color: #A2D1FF;
+}
+.button-buy:active {
+    background-color: #8EB4DC;
+}
+
+.hamster {
+    background-color: #EDF6FF;
+    color: #606D7C;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+.hamster:hover {
+    background-color: #A2D1FF;
+}
+.hamster:active {
+    background-color: #8EB4DC;
+}

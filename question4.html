@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вопрос4</title>
+    <link rel="stylesheet" href="style.css"></linkrel>
+    <style>
+        body {
+            background-color: #CADAEB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #465565;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #EDF6FF;
+            color: #606D7C;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px 0;
+        }
+        .button:hover {
+            background-color: #A2D1FF;
+        }
+        .button:active {
+            background-color: #8EB4DC;
+        }
+        .contacts {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Хотите ли вы угловой диван?</h1>
+    <div class="container">
+        <button class="button yes">да</button>
+        <button class="button no">нет</button>
+    </div>
+    <div class="contacts">
+        <button class="button">контакты</button>
+    </div>
+    <script src="question-scripts\script4.js"></script>
+</body>
+</html>

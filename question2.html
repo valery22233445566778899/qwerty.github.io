@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вопрос2</title>
+    <link rel="stylesheet" href="style.css"></linkrel>
+    <style>
+        body {
+            background-color: #CADAEB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #465565;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .item {
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+        .button {
+            background-color: #EDF6FF;
+            color: #606D7C;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+        }
+        .button:hover {
+            background-color: #A2D1FF;
+        }
+        .button:active {
+            background-color: #8EB4DC;
+        }
+        .contacts {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Какого размера вы хотите диван?</h1>
+    <div class="container">
+        <div class="item">
+            <img src="https://kingstyle.by/upload/Sh/imageCache/796/7b3/2232a7ae592c4220d92f296129fd2920.webp" alt="Маленький диван"/>
+            <button class="button bit">маленький</button>
+        </div>
+        <div class="item">
+            <img src="https://craftmebel.by/assets/components/phpthumbof/cache/divan-28-800x640-750x530.4d7bc7baa64d232809eb99ef8807c270.jpg" alt="Средний диван"/>
+            <button class="button middle">средний</button>
+        </div>
+        <div class="item">
+            <img src="https://cdn0.divan.by/img/v1/oIqE_vhNw5GW1R6Qy0sXTKcVSmvwpcXaHeDng0jNnX8/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzQ1MjI5MDcucG5n.jpg" alt="Большой диван"/>
+            <button class="button huge">большой</button>
+        </div>
+    </div>
+    <div class="contacts">
+        <button class="button">контакты</button>
+    </div>
+    <script src="question-scripts\script2.js"></script>
+</body>
+</html>

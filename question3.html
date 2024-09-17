@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>вопрос3</title>
+    <link rel="stylesheet" href="style.css"></linkrel>
+    <style>
+        body {
+            background-color: #CADAEB;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #465565;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .item {
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            border-radius: 12px;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 10px;
+            height: 200px;
+        }
+        .button {
+            background-color: #EDF6FF;
+            color: #606D7C;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+        }
+        .button:hover {
+            background-color: #A2D1FF;
+        }
+        .button:active {
+            background-color: #8EB4DC;
+        }
+        .contacts {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Из какого материала вы хотите диван?</h1>
+    <div class="container">
+        <div class="item">
+            <img src="https://craftmebel.by/assets/components/phpthumbof/cache/1_39oh-b5-750x530.4d7bc7baa64d232809eb99ef8807c270.jpg" alt="Диван 1"/>
+            <button class="button leather">кожа</button>
+        </div>
+        <div class="item">
+            <img src="https://cdn0.divan.by/img/v1/rwRd3bQgogOmYnpXnwL7kSsf2E9GJ3ZWYLN2tL56uvw/t:0::0:0/pd:60:60:60:60/rs:fit:1148:720:0:1:ce:0:0/g:ce:0:0/bg:f5f3f1/q:85/czM6Ly9kaXZhbi9wcm9kdWN0LzUyMzA2NTEucG5n.jpg" alt="Диван 2"/>
+            <button class="button textile">ткань</button>
+        </div>
+        <div class="item">
+            <img src="https://i.pinimg.com/originals/dd/4e/96/dd4e961e8f426a7d3fc866c92c0987f6.jpg" alt="Диван 3"/>
+            <button class="button latex">латекс</button>
+        </div>
+    </div>
+    <div class="contacts">
+        <button class="button">контакты</button>
+    </div>
+    <script src="question-scripts\script3.js"></script>
+</body>
+</html>

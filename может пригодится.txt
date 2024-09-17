@@ -1,0 +1,117 @@
+ классы
+ class Quiz {
+     constructor(question, ans_1, ans_2, ans_3, picture_1, picture_2, picture_3) {
+         this.question = question
+         this.ans_1 = ans_1
+         this.ans_2 = ans_2
+         this.ans_3 = ans_3
+         this.picture_1 = picture_1
+         this.picture_2 = picture_2
+         this.picture_3 = picture_3
+         this.answers = [
+             this.ans_1,
+             this.ans_2,
+             this.ans_3
+         ]
+     }
+     методы
+
+ }
+
+ class Sofa {
+     constructor(shape, size, material, place_for, picture) {
+         this.shape = shape
+         this.size = size
+         this.material = material
+         this.place_for = place_for
+         this.picture = picture
+         this.properties = [
+             this.shape,
+             this.size,
+             this.material,
+             this.place_for
+         ]
+     }
+     методы
+
+ }
+
+
+
+ const sofas = new Map()
+
+ Диваны :)
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+ dictionary.set(new Sofa('форма', 'размер', 'материал', 'Для места', 'url(*картинка*)'), "Название дивана")
+
+ let quiz = [
+     new Quiz('Куда вы хотите поставить диван?', 
+         'На кухню', 
+         'В гостинную', 
+         'В комнату', 
+         'url(*картинка*)', 
+         'url(*картинка*)', 
+         'url(*картинка*)'),
+
+     new Quiz('Какой формы вы хотите диван?', 
+         'Угловой', 
+         'Прямой', 
+         'Раскладной', 
+         'url(*картинка*)', 
+         'url(*картинка*)', 
+         'url(*картинка*)'),
+
+     new Quiz('Какого размера вы хотите диван?', 
+         'Маленький', 
+         'Средний', 
+         'Большой', 
+         'url(*картинка*)',
+         'url(*картинка*)',
+         'url(*картинка*)'),
+
+     new Quiz('Из кокого материала вы хотите диван?', 
+         'Кожа', 
+         'Натуральное дерево', 
+         'Латекс', 
+         'url(*картинка*)',
+         'url(*картинка*)',
+         'url(*картинка*)')
+ ]
+
+ start_button.addEventListener('click', function() {
+     скрываем элементы на экране
+     start_button.style.display = 'none'
+     const sofas_ = sofas
+     for (let a = 0; a < quiz.length; a += 1) {
+         Получаем параметры из классов массива
+         let answer_1 = quiz[a].ans_1
+         let answer_2 = quiz[a].ans_2
+         let answer_3 = quiz[a].ans_3
+         let picture = quiz[a].picture
+         let question = quiz[a].question
+         Применяем полученные параметры к экрану
+         ans_button1.innerHTML = answer_1
+         ans_button2.innerHTML = answer_2
+         ans_button3.innerHTML = answer_3
+         doc_picture.innerHTML = picture
+         dos_question.innerHTML = question
+         for (let i = 0; i < quiz[a].answers.length; i += 1) {
+             quiz[a].answers[i].addEventListener('click', function () {
+                 opinion.push(quiz[a].answers[i])
+             })
+         }
+         for (let b = 0; b < opinion.length; i += 1) {
+             let opinion_ = opinion[b]
+             for (let key in sofas) {
+                 for (let c = 0; c < key)
+             }
+         }
+     }
+})
