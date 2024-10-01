@@ -6,17 +6,11 @@
     <title>вопрос2</title>
     <link rel="stylesheet" href="style.css"></linkrel>
     <style>
-        body {
-            background-color: #CADAEB;
-            display: flex;
+        h1 {
+            color: #465565;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            color: #465565;
         }
         .container {
             display: flex;
@@ -36,80 +30,23 @@
             margin-bottom: 10px;
             height: 200px;
         }
-        
         .button {
-  background-color: #4dccc6;
-background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
-  line-height: 42px;
-  padding: 0;
-  border: none;
-  border-radius: 3px;
-  width: 200px;
-  font-size: 20px;
-}
-.button:hover{
-  background-color: #89d8d3;
-background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
-}
-.button span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.button:before,
-.button:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-   box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-            inset -4px -4px 6px 0 rgba(255,255,255,.9),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-  transition: all 0.3s ease;
-}
-.button:before {
-  height: 0%;
-  width: .1px;
-}
-.button:after {
-  width: 0%;
-  height: .1px;
-}
-.button:hover:before {
-  height: 100%;
-}
-.button:hover:after {
-  width: 100%;
-}
-.button span:before,
-.button span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.9),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-  transition: all 0.3s ease;
-}
-.button span:before {
-  width: .1px;
-  height: 0%;
-}
-.button span:after {
-  width: 0%;
-  height: .1px;
-}
-.button span:hover:before {
-  height: 100%;
-}
-.button span:hover:after {
-  width: 100%;
-}
-
+            background-color: #EDF6FF;
+            color: #606D7C;
+            border: none;
+            border-radius: 12px;
+            padding: 20px 30px;
+            font-size: 20px;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+        }
+        .button:hover {
+            background-color: #A2D1FF;
+        }
+        .button:active {
+            background-color: #8EB4DC;
+        }
         .contacts {
             position: absolute;
             top: 20px;
@@ -118,20 +55,26 @@ background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo" id="Home">
+            <p class="logo-text"></p>
+        </div>
+        <button class="btn3">контакты</button>
+        <button class="btn2">карзина</button>
+        <button class="btn1">каталог</button>
+    </div>
     <h1>Куда вы хотите поставить диван?</h1>
     <div class="container">
         <div class="item">
-            <button class="button to-kitchen"><span>на кухню</span></button>
+            <button class="button button1">на кухню</button>
         </div>
         <div class="item">
-            <button class="button to-living-room">в гостинную</button>
+            <button class="button button2">в гостинную</button>
         </div>
         <div class="item">
-            <button class="button to-bed-room">в спальню</button>
+            <button class="button button3">в спальню</button>
         </div>
     </div>
-    <div class="contacts">
-        <button class="button">контакты</button>
     </div>
     <script src="question-scripts\script1.js"></script>
 </body>

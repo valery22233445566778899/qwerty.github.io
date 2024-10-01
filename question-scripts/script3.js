@@ -1,7 +1,7 @@
 //Переменные
-let button_1 = document.querySelector('.leather')
-let button_2 = document.querySelector('.textile')
-let button_3 = document.querySelector('.latex')
+let button_1 = document.querySelector('.button1')
+let button_2 = document.querySelector('.button2')
+let button_3 = document.querySelector('.button3')
 
 //Функции
 

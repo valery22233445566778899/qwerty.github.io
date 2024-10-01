@@ -1,10 +1,9 @@
-//Переменные
-let button_1 = document.querySelector('.to-kitchen')
-let button_2 = document.querySelector('.to-living-room')
-let button_3 = document.querySelector('.to-bed-room')
+// Переменные
+let button_1 = document.querySelector('.button1');
+let button_2 = document.querySelector('.button2');
+let button_3 = document.querySelector('.button3');
 
-//Функции
-
+// Функции
 function setCookie(name, value, days) {
     const expires = new Date(Date.now() + days * 864e5).toUTCString(); // Вычисляем дату истечения
     document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/'; // Устанавливаем куку
@@ -21,19 +20,18 @@ function deleteCookie(name) {
     setCookie(name, '', -1); // Устанавливаем куку с отрицательным временем жизни
 }
 
-//анимации и обработка событий
-
+// Анимации и обработка событий
 button_1.addEventListener('click', function () {
-    setCookie('question1', 1, 1)
-    window.location.href = 'question2.html'
-})
+    setCookie('question1', 1, 1);
+    window.location.href = 'question2.html';
+});
 
 button_2.addEventListener('click', function () {
-    setCookie('question1', 2, 1)
-    window.location.href = 'question2.html'
-})
+    setCookie('question1', 2, 1);
+    window.location.href = 'question2.html';
+});
 
 button_3.addEventListener('click', function () {
-    setCookie('question1', 3, 1)
-    window.location.href = 'question2.html'
-})
+    setCookie('question1', 3, 1);
+    window.location.href = 'question2.html';
+});
